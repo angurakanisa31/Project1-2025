@@ -195,3 +195,14 @@ nav ul li a:hover::after{
     background: #e68a00;
     transform: scale(1.05);
 }
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(15, 32, 39, 0.8);
+    color: #fff;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
