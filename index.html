@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFlio</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img scr="image/rg.jpg" class="logo">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skill</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h2> Hi I'm <span>Angu</span></h2>
+        </div>
+
+    </div>
+   </div>
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="About-col-1">
+                <img src="image/ug.jpg">
+            </div>
+            <div class="About-col-2">
+                <h2 class="sub-title">About Me</h2>
+                <p>Hello,I'm Angu Rakanisa! I'm second year Computer Science Student! who loves coding and perform to learn coding.I am enjoy with working on web design.I'm passionate on leveraging on data science.I have learn Database Management system,Data Structure,Design Algorithms.And I'm interseted to solve real world problems.!! </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Area Of Interest')">Area Of Interest</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li>
+                            <span>C<br>C++<br>Python<br>Java<br>Data structure<br>DBMS</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id ="Area Of Interest">
+                    <ul>
+                        <li>
+                            <span>Data Science<br>Full Stack</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li>
+                            <span>2020<br>10th Completed</span>
+                        </li>
+                        <li><span>2023<br>12th Completed</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section>
+        <h2 class="sub-title">My Projects</h2>
+        <div class="portfolio-gallery">
+            <img src="https://www.iitms.co.in/library-management-system/img/Library-Management-System-Infographic.png" alt="Project 1">
+            <img src="https://repository-images.githubusercontent.com/607354175/bb92f39f-8830-49ee-aa7c-09eeb8f925d6" alt="Project 2">
+            <img src="https://img.freepik.com/premium-vector/payment-receipt-template-with-flat-design_23-2147903459.jpg?w=2000" alt="Project 3">
+            <img src="https://www.researchgate.net/publication/361212473/figure/fig1/AS:11431281079103684@1660531886134/E-commerce-system-platform-architecture.png" alt="Project 4">
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontents.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementsById(tabname).classList.add("active-tab");
+    }    
+</script>
+</body>
+</html>
